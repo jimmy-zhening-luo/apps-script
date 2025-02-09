@@ -1,9 +1,9 @@
 {
   "$template": "22.13.7",
-  "name": "package_name",
+  "name": "apps-script",
   "version": "0.0.0",
-  "description": "",
-  "repository": "github:jimmy-zhening-luo/REPO",
+  "description": "Google Apps Script scripts for Google Apps.",
+  "repository": "github:jimmy-zhening-luo/apps-script",
   "license": "MIT",
   "private": true,
   "engineStrict": true,
