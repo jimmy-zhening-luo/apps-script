@@ -90,6 +90,11 @@
       "dist/**/*.spec.js"
     ]
   },
-  "keywords": [],
+  "keywords": [
+    "google",
+    "apps",
+    "script",
+    "google-apps-script"
+  ],
   "author": "Jimmy Zhening Luo <1450044+jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
 }
