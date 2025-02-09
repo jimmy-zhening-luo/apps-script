@@ -1,4 +1,5 @@
 {
   "scriptId": "1qFMqBXZquMU9CrUnqjp-TRRtAxtDn24zFiqKID3f7pNzKGD23m38bbze",
-  "rootDir": "C:\\Users\\zluo\\code\\apps-script" 
+  "rootDir": "src",
+  "fileExtension": "ts"
 }
