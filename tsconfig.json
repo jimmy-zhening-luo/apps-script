@@ -1,0 +1,163 @@
+{
+  "display": "@jimbojet/tsc",
+  "version": "5.7.0",
+  "$help": "https://www.typescriptlang.org/tsconfig/#quick-nav-Top%20Level",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": [
+    "*.config.ts",
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "typings/**/*.d.ts",
+  ],
+  "exclude": [],
+  "compilerOptions": {
+    // #region TYPE CHECKING
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    // #endregion TYPE CHECKING
+
+
+    // #region MODULES
+    "allowArbitraryExtensions": true,
+    // "allowImportingTsExtensions": true,
+    // "allowUmdGlobalAccess": true,
+    // "baseUrl": "./",
+    // "customConditions": [],
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    // "moduleSuffixes": [],
+    // "noResolve": true,
+    // "paths": { "*": ["node_modules/*"] },
+    // "resolveJsonModule": true,
+    // "resolvePackageJsonExports": true,
+    // "resolvePackageJsonImports": true,
+    "rootDir": "src",
+    // "rootDirs": [],
+    // "typeRoots": [],
+    "types": [
+      "mocha",
+      "chai",
+      /* {CONFIGURE} */
+    ],
+    // #endregion MODULES
+
+
+    // #region EMIT
+    "declaration": true,
+    "declarationDir": "dist",
+    "declarationMap": true,
+    // "downlevelIteration": true,
+    // "emitBOM": true,
+    // "emitDeclarationOnly": true,
+    // "importHelpers": true,
+    // "inlineSourceMap": true,
+    // "inlineSources": true,
+    // "mapRoot": "",
+    // "newLine": "crlf",
+    // "noEmit": true,
+    // "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "outDir": "dist",
+    // "outFile": "./",
+    // "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    // "sourceRoot": "",
+    // "stripInternal": true,
+    // #endregion EMIT
+
+
+    // #region JAVASCRIPT SUPPORT
+    // "allowJs": true,
+    // "checkJs": true,
+    // "maxNodeModuleJsDepth": 1,
+    // #endregion JAVASCRIPT SUPPORT
+
+
+    // #region EDITOR SUPPORT
+    // "disableSizeLimit": false,
+    // "plugins": [],
+    // #endregion EDITOR SUPPORT
+
+
+    // #region INTEROP CONSTRAINTS
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    // "isolatedDeclarations": false,
+    // "isolatedModules": true,
+    // "preserveSymlinks": true,
+    "verbatimModuleSyntax": true,
+    // #endregion INTEROP CONSTRAINTS
+
+
+    // #region LANGUAGE AND ENVIRONMENT
+    // "emitDecoratorMetadata": true,
+    // "experimentalDecorators": true,
+    // "jsx": "preserve",
+    // "jsxFactory": "",
+    // "jsxFragmentFactory": "",
+    // "jsxImportSource": "",
+    "lib": [
+      "es2023",
+      /* {CONFIGURE} */
+    ],
+    // "moduleDetection": "auto",
+    // "noLib": true,
+    // "reactNamespace": "",
+    "target": "es2022",
+    // "useDefineForClassFields": true /* @default: target > es2022 : true; else : false*/,
+    // #endregion LANGUAGE AND ENVIRONMENT
+
+
+    // #region COMPILER DIAGNOSTICS
+    // "diagnostics": true,
+    // "explainFiles": true,
+    // "extendedDiagnostics": true,
+    // "generateCpuProfile": "profile.cpuprofile",
+    // "listEmittedFiles": true,
+    // "listFiles": true,
+    // "noCheck": true,
+    // "traceResolution": true,
+    // #endregion COMPILER DIAGNOSTICS
+
+
+    // #region PROJECTS
+    // "composite": true,
+    // "disableReferencedProjectLoad": true,
+    // "disableSolutionSearching": true,
+    // "disableSourceOfProjectReferenceRedirect": true,
+    "incremental": true,
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    // #endregion PROJECTS
+
+
+    // #region OUTPUT FORMATTING
+    // "noErrorTruncation": true,
+    // "preserveWatchOutput": true,
+    // "pretty": true,
+    // #endregion OUTPUT FORMATTING
+
+
+    // #region COMPLETENESS
+    "skipLibCheck": false,
+    // #endregion COMPLETENESS
+  },
+}
