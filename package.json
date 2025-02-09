@@ -12,10 +12,8 @@
     "npm": ">=10.9.0"
   },
   "peerDependenciesMeta": {},
-  "dependencies": {
-    "@google/clasp": "^2.5.0"
-  },
   "devDependencies": {
+    "@google/clasp": "^2.5.0",
     "@types/chai": "^5.0.1",
     "@types/google-apps-script": "^1.0.94",
     "@types/mocha": "^10.0.10",
