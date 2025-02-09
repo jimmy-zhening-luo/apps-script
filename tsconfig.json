@@ -55,6 +55,7 @@
       "mocha",
       "chai",
       /* {CONFIGURE} */
+      "google-apps-script",
     ],
     // #endregion MODULES
 
