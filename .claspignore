@@ -1,0 +1,7 @@
+**/**
+
+!appscript.json
+!src/**/*.ts
+
+src/**/*.spec.ts
+src/**/*.ts
