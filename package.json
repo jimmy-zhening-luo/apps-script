@@ -12,6 +12,9 @@
     "npm": ">=10.9.0"
   },
   "peerDependenciesMeta": {},
+  "dependencies": {
+    "@google/clasp": "^2.5.0"
+  },
   "devDependencies": {
     "@types/chai": "^5.0.1",
     "@types/google-apps-script": "^1.0.94",
@@ -96,8 +99,5 @@
     "script",
     "google-apps-script"
   ],
-  "author": "Jimmy Zhening Luo <1450044+jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)",
-  "dependencies": {
-    "@google/clasp": "^2.5.0"
-  }
+  "author": "Jimmy Zhening Luo <1450044+jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
 }
