@@ -1,12 +1,12 @@
 function clean() {
-  const garbage = GmailApp
-    .getUserLabelByName("ٴGarbage")
+  const labels = hydrate(),
+  garbage = GmailApp
+    .getUserLabelByName(labels ?? "ٴGarbage")
     .getThreads()
     .filter(thread => !thread.isInSpam());
 
   for (const piece of garbage)
     piece.moveToSpam();
-}
 
-clean();
-console.log("SUCCESS");
+  console.log("SUCCESS");
+}
