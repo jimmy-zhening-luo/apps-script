@@ -9,3 +9,4 @@ function clean() {
 }
 
 clean();
+console.log("SUCCESS");
