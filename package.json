@@ -1,7 +1,7 @@
 {
   "$template": "22.14.0",
   "name": "apps-script",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Google Apps Script scripts for Google Apps.",
   "repository": "github:jimmy-zhening-luo/apps-script",
   "license": "MIT",
