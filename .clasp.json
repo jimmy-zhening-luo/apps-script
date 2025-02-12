@@ -1,5 +1,10 @@
 {
   "scriptId": "1qFMqBXZquMU9CrUnqjp-TRRtAxtDn24zFiqKID3f7pNzKGD23m38bbze",
   "rootDir": "src",
-  "fileExtension": "ts"
+  "fileExtension": "ts",
+  "filePushOrder": [
+    "src/index.ts",
+    "src/properties/labels.ts",
+    "src/properties/index.ts"
+  ]
 }
