@@ -1,8 +1,8 @@
 function eventColors(
   eventBuffer: string,
   eventTherapy: string,
-  eventMedical: string,
+  eventDoctor: string,
   eventHaircut: string,
 ) {
-  console.log(`eventColors: Color these events: ${eventBuffer}, ${eventTherapy}, ${eventMedical}, ${eventHaircut}`);
+  console.log(`eventColors: Color these events: ${eventBuffer}, ${eventTherapy}, ${eventDoctor}, ${eventHaircut}`);
 }

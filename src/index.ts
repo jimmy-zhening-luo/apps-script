@@ -16,7 +16,7 @@ function main() {
   eventColors(
     properties.events.eventBuffer,
     properties.events.eventTherapy,
-    properties.events.eventMedical,
+    properties.events.eventDoctor,
     properties.events.eventHaircut,
   );
   console.log("main(): JOB: END: Calendar: Event Colors");

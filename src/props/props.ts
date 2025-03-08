@@ -3,7 +3,7 @@ const DefinedProperties = {
   Events: [
     "eventBuffer",
     "eventTherapy",
-    "eventMedical",
+    "eventDoctor",
     "eventHaircut",
   ] as const,
 } as const;
