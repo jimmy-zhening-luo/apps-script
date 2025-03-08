@@ -13,7 +13,12 @@ function main() {
   // #endregion
   // #region Jobs: Calendar
   console.log("main(): JOB: START: Calendar: Event Colors");
-  eventColors();
+  eventColors(
+    properties.events.eventBuffer,
+    properties.events.eventTherapy,
+    properties.events.eventMedical,
+    properties.events.eventHaircut,
+  );
   console.log("main(): JOB: END: Calendar: Event Colors");
   // #endregion
   console.log("main(): SUCCESS");
