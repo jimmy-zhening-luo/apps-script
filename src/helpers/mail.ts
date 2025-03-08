@@ -1,4 +1,4 @@
-function safeThreads(label = "") {
+function getSafeThreads(label = "") {
   try {
     if (label === "")
       throw new TypeError("Label name is empty", { cause: { label } });

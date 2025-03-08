@@ -1,5 +1,5 @@
 function cleanGarbage(label: string) {
-  const garbage = safeThreads(label),
+  const garbage = getSafeThreads(label),
   garbageCount = garbage.length;
 
   console.log(`cleanGarbage: ${garbageCount} Garbage threads retrieved from label:${label}`);
