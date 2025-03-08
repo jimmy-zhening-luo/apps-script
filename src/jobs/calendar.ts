@@ -1,8 +1,10 @@
 function eventColors(
-  eventBuffer: string,
-  eventTherapy: string,
-  eventDoctor: string,
-  eventHaircut: string,
+  eventBuffer: string[],
+  eventTherapy: string[],
+  eventDoctor: string[],
+  eventHaircut: string[],
 ) {
-  console.log(`eventColors: Color these events: ${eventBuffer}, ${eventTherapy}, ${eventDoctor}, ${eventHaircut}`);
+  const separator = ", ";
+
+  console.log(`eventColors: Color these events: ${eventBuffer.join(separator)}; ${eventTherapy.join(separator)}; ${eventDoctor.join(separator)}; ${eventHaircut.join(separator)}`);
 }
