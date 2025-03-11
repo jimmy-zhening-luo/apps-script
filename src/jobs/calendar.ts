@@ -43,7 +43,7 @@ function eventColors(
   setColors(sessions, "MAUVE");
   console.log(`eventColors: Successfully set Therapy event colors`);
   console.log(`eventColors: Trying to set ${counts.doctor} Doctor events to ORANGE`);
-  setColors(checkups, "ORANGE");
+  setColors(checkups, "YELLOW");
   console.log(`eventColors: Successfully set Doctor event colors`);
   console.log(`eventColors: Trying to set ${counts.haircut} Haircut events to YELLOW`);
   setColors(haircuts, "YELLOW");
