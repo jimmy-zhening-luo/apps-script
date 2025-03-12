@@ -24,18 +24,10 @@ function eventColors(
   },
   count = Object.values(counts).reduce((a, b) => a + b, 0);
 
-  console.log(`eventColors: Found ${count} events: ${JSON.stringify(counts)}`);
-  console.log(`eventColors: Trying to set ${counts.buffer} Buffer events to GRAY`);
+  console.log(`eventColors: Found ${count} total events: ${JSON.stringify(counts)}`);
   setColors(buffers, "Graphite");
-  console.log(`eventColors: Successfully set Buffer event colors`);
-  console.log(`eventColors: Trying to set ${counts.therapy} Therapy events to MAUVE`);
   setColors(sessions, "Grape");
-  console.log(`eventColors: Successfully set Therapy event colors`);
-  console.log(`eventColors: Trying to set ${counts.doctor} Doctor events to ORANGE`);
   setColors(checkups, "Banana");
-  console.log(`eventColors: Successfully set Doctor event colors`);
-  console.log(`eventColors: Trying to set ${counts.haircut} Haircut events to YELLOW`);
   setColors(haircuts, "Banana");
-  console.log(`eventColors: Successfully set Haircut event colors`);
-  console.log(`eventColors: Finished setting all event colors`);
+  console.log(`eventColors: Finished setting event colors`);
 }
