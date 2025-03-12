@@ -5,6 +5,7 @@
   "fileExtension": "ts",
   "filePushOrder": [
     "src/index.ts",
+    "src/props/consts.ts",
     "src/props/props.ts",
     "src/props/index.ts"
   ]
