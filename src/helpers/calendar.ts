@@ -1,10 +1,12 @@
-function getEventsNextYearByKeyword(
+function getEventsUpcoming(
   calendar: GoogleAppsScript.Calendar.Calendar,
   keywords: string[],
+  lookForward = 9,
 ) {
-  const window = {
-    start: new Date(),
-    end: new Date(new Date().setFullYear(new Date().getFullYear() + 1)),
+  const now = new Date,
+  window = {
+    start: now,
+    end: new Date(new Date().setMonth(now.getMonth() + lookForward)),
   };
 
   return keywords

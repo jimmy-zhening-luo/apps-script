@@ -23,10 +23,10 @@ function eventColors(
 
   console.log(`eventColors: Color events with keywords: ${printTitles("Buffer", eventBuffer)}; ${printTitles("Therapy", eventTherapy)}; ${printTitles("Doctor", eventDoctor)}; ${printTitles("Haircut", eventHaircut)}`);
 
-  const buffers = getEventsNextYearByKeyword(calendar, eventBuffer),
-  sessions = getEventsNextYearByKeyword(calendar, eventTherapy),
-  checkups = getEventsNextYearByKeyword(calendar, eventDoctor),
-  haircuts = getEventsNextYearByKeyword(calendar, eventHaircut),
+  const buffers = getEventsUpcoming(calendar, eventBuffer),
+  sessions = getEventsUpcoming(calendar, eventTherapy),
+  checkups = getEventsUpcoming(calendar, eventDoctor),
+  haircuts = getEventsUpcoming(calendar, eventHaircut),
   counts = {
     buffer: buffers.length,
     therapy: sessions.length,
