@@ -3,7 +3,7 @@
   "$schema": "https://json.schemastore.org/package",
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
   "name": "apps-script",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Google Apps Script scripts for Google Apps.",
   "repository": "github:jimmy-zhening-luo/apps-script",
   "license": "MIT",
