@@ -10,7 +10,7 @@ function eventColors(
 
   const calendar = CalendarApp.getDefaultCalendar();
 
-  console.log(`eventColors: Color events with keywords: ${printTitles("Buffer", eventBuffer)}; ${printTitles("Therapy", eventTherapy)}; ${printTitles("Doctor", eventDoctor)}; ${printTitles("Haircut", eventHaircut)}`);
+  console.log(`Job.eventColors: Color events with keywords: ${printTitles("Buffer", eventBuffer)}; ${printTitles("Therapy", eventTherapy)}; ${printTitles("Doctor", eventDoctor)}; ${printTitles("Haircut", eventHaircut)}`);
 
   const buffers = getEventsUpcoming(calendar, eventBuffer),
   sessions = getEventsUpcoming(calendar, eventTherapy),
@@ -24,10 +24,10 @@ function eventColors(
   },
   count = Object.values(counts).reduce((a, b) => a + b, 0);
 
-  console.log(`eventColors: Found ${count} total events: ${JSON.stringify(counts)}`);
-  setColors(buffers, "Graphite");
-  setColors(sessions, "Grape");
-  setColors(checkups, "Banana");
-  setColors(haircuts, "Banana");
-  console.log(`eventColors: Finished setting event colors`);
+  console.log(`Job.eventColors: Found ${count} total events: ${JSON.stringify(counts)}`);
+  setColors(buffers, "Graphite", "Buffer");
+  setColors(sessions, "Grape", "Therapy");
+  setColors(checkups, "Banana", "Doctor");
+  setColors(haircuts, "Banana", "Haircut");
+  console.log(`Job.eventColors: Finished setting event colors`);
 }

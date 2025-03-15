@@ -30,11 +30,11 @@ function getEventsUpcoming(
 function setColors(
   events: GoogleAppsScript.Calendar.CalendarEvent[],
   color: keyof typeof COLORS,
-  label = "",
+  category = "",
 ) {
-  const eventLabel = label === "" ? "events" : `${label} events`;
+  const quantifier = category === "" ? "events" : `${category} events`;
 
-  console.log(`Calendar.setColors: Try to set ${events.length} ${eventLabel} to ${color}`);
+  console.log(`Calendar.setColors: Try to set ${events.length} ${quantifier} to ${color}`);
 
   const enumerated = CalendarApp.EventColor[COLORS[color]];
 
@@ -42,5 +42,5 @@ function setColors(
     if (event.getColor() !== String(enumerated))
       event.setColor(String(enumerated));
 
-  console.log(`Calendar.setColors: Successfully set colors of ${eventLabel}`);
+  console.log(`Calendar.setColors: Successfully set colors of ${quantifier}`);
 }
