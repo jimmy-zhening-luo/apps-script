@@ -26,7 +26,7 @@ function eventColors(
 
   console.log(`Job.eventColors: Found ${count} total events: ${JSON.stringify(counts)}`);
   setColors(buffers, "Graphite", "Buffer");
-  setColors(sessions, "Grape", "Therapy");
+  setColors(sessions, "Peacock", "Therapy");
   setColors(checkups, "Banana", "Doctor");
   setColors(haircuts, "Banana", "Haircut");
   console.log(`Job.eventColors: Finished setting event colors`);
