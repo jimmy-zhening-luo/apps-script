@@ -4,7 +4,10 @@ function eventColors(
   eventDoctor: string[],
   eventHaircut: string[],
 ) {
-  function printTitles(label: string, titles: string[]) {
+  function printTitles(
+    label: string,
+    titles: string[],
+  ) {
     return `${label}: ${titles.join(", ")}`;
   }
 
@@ -22,12 +25,33 @@ function eventColors(
     doctor: checkups.length,
     haircut: haircuts.length,
   },
-  count = Object.values(counts).reduce((a, b) => a + b, 0);
+  count = Object
+    .values(counts)
+    .reduce(
+      (a, b) => a + b,
+      0,
+    );
 
   console.log(`Job.eventColors: Found ${count} total events: ${JSON.stringify(counts)}`);
-  setColors(buffers, "Graphite", "Buffer");
-  setColors(sessions, "Peacock", "Therapy");
-  setColors(checkups, "Banana", "Doctor");
-  setColors(haircuts, "Banana", "Haircut");
+  setColors(
+    buffers,
+    "Graphite",
+    "Buffer",
+  );
+  setColors(
+    sessions,
+    "Peacock",
+    "Therapy",
+  );
+  setColors(
+    checkups,
+    "Banana",
+    "Doctor",
+  );
+  setColors(
+    haircuts,
+    "Banana",
+    "Haircut",
+  );
   console.log(`Job.eventColors: Finished setting event colors`);
 }

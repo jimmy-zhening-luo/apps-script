@@ -1,16 +1,16 @@
 function main() {
-  const properties = hydrate();
+  const properties = getProperties();
 
   console.log("main(): JOB: Start: Gmail: Clean Garbage");
-  cleanGarbage(properties.labels.labelGmailGarbage);
+  cleanGarbage(properties.mail.labelGmailGarbage);
   console.log("main(): JOB: COMPLETE: Gmail: Clean Garbage");
 
   console.log("main(): JOB: Start: Calendar: Event Colors");
   eventColors(
-    properties.events.eventBuffer,
-    properties.events.eventTherapy,
-    properties.events.eventDoctor,
-    properties.events.eventHaircut,
+    properties.calendar.eventBuffer,
+    properties.calendar.eventTherapy,
+    properties.calendar.eventDoctor,
+    properties.calendar.eventHaircut,
   );
   console.log("main(): JOB: COMPLETED: Calendar: Event Colors");
 

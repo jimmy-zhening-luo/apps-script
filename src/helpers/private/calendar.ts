@@ -6,7 +6,16 @@ function getUUID(event: GoogleAppsScript.Calendar.CalendarEvent) {
   return [
     event.getId(),
     ...event.isAllDayEvent()
-      ? ["ALL_DAY", timestring(event.getAllDayStartDate())]
-      : [timestring(event.getStartTime())],
+      ? [
+          "ALL_DAY",
+          timestring(
+            event.getAllDayStartDate(),
+          ),
+        ]
+      : [
+          timestring(
+            event.getStartTime(),
+          ),
+        ],
   ].join("#");
 }

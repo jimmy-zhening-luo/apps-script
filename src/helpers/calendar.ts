@@ -1,12 +1,17 @@
 function getEventsUpcoming(
   calendar: GoogleAppsScript.Calendar.Calendar,
   keywords: string[],
-  lookForward = 9,
+  lookForward = 7,
 ) {
   const now = new Date,
   window = {
     start: now,
-    end: new Date(new Date().setMonth(now.getMonth() + lookForward)),
+    end: new Date(
+      new Date()
+        .setMonth(
+          now.getMonth() + lookForward,
+        ),
+    ),
   };
 
   return [
@@ -17,11 +22,19 @@ function getEventsUpcoming(
             .getEvents(
               window.start,
               window.end,
-              { search: keyword },
+              {
+                search: keyword,
+
+              },
             ),
         )
         .flat()
-        .map(event => [getUUID(event), event]),
+        .map(
+          event => [
+            getUUID(event),
+            event,
+          ],
+        ),
     )
       .values(),
   ];
@@ -32,7 +45,9 @@ function setColors(
   color: keyof typeof EVENT_COLORS,
   category = "",
 ) {
-  const quantifier = category === "" ? "events" : `${category} events`;
+  const quantifier = category === ""
+    ? "events"
+    : `${category} events`;
 
   console.log(`Calendar.setColors: Try to set ${events.length} ${quantifier} to ${color}`);
 
