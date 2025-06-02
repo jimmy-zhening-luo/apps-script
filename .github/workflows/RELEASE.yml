@@ -4,8 +4,8 @@ on:
     tags:
       - v[0-9]+.[0-9]+.[0-9]+
 jobs:
-  publish-prod-main:
-    name: Build/Publish (PROD.main)
+  publish-release:
+    name: Build/Publish (RELEASE)
     environment:
       name: RELEASE
       url: https://script.google.com/home/projects/1qFMqBXZquMU9CrUnqjp-TRRtAxtDn24zFiqKID3f7pNzKGD23m38bbze/edit
