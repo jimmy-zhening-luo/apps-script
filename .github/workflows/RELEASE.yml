@@ -32,8 +32,8 @@ jobs:
       - name: Load Google Apps Script Secret
         id: secrets
         run: |
-          rm -f .clasprc.json
-          echo '${{ secrets.CLASPRC }}' >> .clasprc.json
+          rm -f ../.clasprc.json
+          echo '${{ secrets.CLASPRC }}' >> ../.clasprc.json
       - name: Publish to Google Apps Script
         id: publish
         run: npm run deploy
