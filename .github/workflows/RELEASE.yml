@@ -1,0 +1,39 @@
+name: Google Apps Script Publish (RELEASE)
+on:
+  push:
+    tags:
+      - v[0-9]+.[0-9]+.[0-9]+
+jobs:
+  publish-prod-main:
+    name: Build/Publish (PROD.main)
+    environment:
+      name: RELEASE
+      url: https://script.google.com/home/projects/1qFMqBXZquMU9CrUnqjp-TRRtAxtDn24zFiqKID3f7pNzKGD23m38bbze/edit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          lfs: false
+      - name: Install Node
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          check-latest: true
+      - name: Update NPM
+        id: npm
+        run: npm i -g npm
+      - name: Install Dependencies
+        id: ci
+        run: npm ci
+      - name: Load Google Apps Script Secret
+        id: secrets
+        run: |
+          rm -f .clasprc.json
+          echo '${{ secrets.CLASPRC }}' >> .clasprc.json
+      - name: Publish to Google Apps Script
+        id: publish
+        run: npm run deploy
