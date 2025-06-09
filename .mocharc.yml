@@ -1,7 +1,7 @@
-# ##################
-# #   .mocharc   ###
-# #   1101.0.0   ###
-# ##################
+####################
+###   .mocharc   ###
+###   1105.1.0   ###
+####################
 
 # https://mochajs.org/#configuration-format
 # https://mochajs.org/#command-line-usage
@@ -12,4 +12,4 @@ extension:
   - js
   - cjs
   - mjs
-color: true
+# require: dist/_test/hooks.js
