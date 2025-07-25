@@ -63,7 +63,6 @@
     "test": "run-os",
     "test:default": "npm run --if-present test:lang:$npm_package_config_language",
     "test:windows": "npm run --if-present test:lang:%npm_package_config_language%",
-    "test:lang:ts": "mocha",
     "prestart": "npm test",
     "start": "run-os",
     "start:default": "npm run start:lang:$npm_package_config_language",

@@ -52,8 +52,7 @@
     // "rootDirs": [],
     // "typeRoots": [],
     "types": [
-      "mocha",
-      "chai",
+      /* @OVERRIDE */
       /* {CONFIGURE} */
       "google-apps-script" /* @OVERRIDE */,
     ],
