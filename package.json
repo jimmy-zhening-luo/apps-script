@@ -19,7 +19,7 @@
     "@types/google-apps-script": "^1.0.99",
     "@types/mocha": "^10.0.10",
     "eslint": "~9.33.0",
-    "linted": "~30.9.0",
+    "linted": "~30.10.0",
     "ts-add-js-extension": "^1.6.6",
     "typescript": "^5.9.2"
   },
