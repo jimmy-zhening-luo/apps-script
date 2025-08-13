@@ -1,11 +1,10 @@
-function cleanGarbage(label: string) {
-  const garbage = getSafeThreads(label),
-  garbageCount = garbage.length;
+function cleanGarbage(garbageTag: string) {
+  const garbage = getThreads(label);
 
-  console.log(`Job.cleanGarbage: ${garbageCount} Garbage threads retrieved from label:${label}`);
+  console.log(`cleanGarbage: Retrieved ${garbage.length} threads tagged with: ${garbageTag}`);
 
   for (const piece of garbage)
     piece.moveToSpam();
 
-  console.log("Job.cleanGarbage: Garbage threads marked as spam");
+  console.log("cleanGarbage: Garbage threads marked as spam");
 }

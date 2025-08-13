@@ -1,18 +1,13 @@
 function main() {
-  const properties = getProperties();
+  const setting = loadSetting();
 
-  console.log("main(): JOB: Start: Gmail: Clean Garbage");
-  cleanGarbage(properties.mail.labelGmailGarbage);
-  console.log("main(): JOB: COMPLETE: Gmail: Clean Garbage");
-
-  console.log("main(): JOB: Start: Calendar: Event Colors");
-  eventColors(
-    properties.calendar.eventBuffer,
-    properties.calendar.eventTherapy,
-    properties.calendar.eventDoctor,
-    properties.calendar.eventHaircut,
+  console.log("main: Start Jobs");
+  cleanGarbage(setting.mail.labelGmailGarbage);
+  setEventColor(
+    setting.calendar.eventBuffer,
+    setting.calendar.eventTherapy,
+    setting.calendar.eventDoctor,
+    setting.calendar.eventHaircut,
   );
-  console.log("main(): JOB: COMPLETED: Calendar: Event Colors");
-
-  console.log("main(): SUCCESS");
+  console.log("main: Jobs Complete");
 }
