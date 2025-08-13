@@ -3,7 +3,7 @@ function loadSetting() {
     App extends keyof typeof SETTING,
   >(
     app: App,
-    setting: ReturnType<PropertiesService["getScriptProperties"]>,
+    setting: ReturnType<typeof PropertiesService["getScriptProperties"]>,
   ): Array<readonly [typeof SETTING[App][number], string]> {
     return SETTING[app]
       .map(
