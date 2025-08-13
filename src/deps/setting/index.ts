@@ -2,8 +2,8 @@ function getProperties() {
   const properties = PropertiesService
     .getScriptProperties();
 
-  function getNamedProperties<T extends keyof typeof namedProperties>(app: T): (readonly [typeof namedProperties[T][number], string])[] {
-    return namedProperties[app]
+  function getNamedProperties<T extends keyof typeof SETTING>(app: T): (readonly [typeof SETTING[T][number], string])[] {
+    return SETTING[app]
       .map(
         property => [
           property,
@@ -28,8 +28,8 @@ function getProperties() {
     );
 
   if (
-    mail.length < namedProperties.mail.length
-    || calendar.length < namedProperties.calendar.length
+    mail.length < SETTING.mail.length
+    || calendar.length < SETTING.calendar.length
   )
     throw new ReferenceError("Some named properties are missing or duplicated");
 

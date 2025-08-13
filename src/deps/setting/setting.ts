@@ -1,4 +1,4 @@
-const namedProperties = {
+const SETTING = {
   mail: ["labelGmailGarbage"] as const,
   calendar: [
     "eventBuffer",

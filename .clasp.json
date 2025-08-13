@@ -5,8 +5,8 @@
   "fileExtension": "ts",
   "filePushOrder": [
     "src/index.ts",
-    "src/properties/const.ts",
-    "src/properties/named.ts",
-    "src/properties/index.ts"
+    "src/deps/const/index.ts",
+    "src/deps/setting/setting.ts",
+    "src/deps/setting/index.ts"
   ]
 }
