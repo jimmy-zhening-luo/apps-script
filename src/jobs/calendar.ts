@@ -37,25 +37,9 @@ function setEventColor(
     }`,
   );
   console.log("setEventColor: Begin setting event color")
-  setColor(
-    buffers,
-    "Graphite",
-    "Buffer",
-  );
-  setColor(
-    sessions,
-    "Peacock",
-    "Therapy",
-  );
-  setColor(
-    checkups,
-    "Banana",
-    "Doctor",
-  );
-  setColor(
-    haircuts,
-    "Banana",
-    "Haircut",
-  );
+  setColor(buffers, "Graphite");
+  setColor(sessions, "Peacock");
+  setColor(checkups, "Banana");
+  setColor(haircuts, "Banana");
   console.log(`setEventColor: Successfully set all event colors`);
 }
