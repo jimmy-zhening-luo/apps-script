@@ -18,7 +18,7 @@ function loadSetting() {
   }
 
   try {
-    const setting = PropertiesService.getScriptProperties() 
+    const setting = PropertiesService.getScriptProperties(),
     mail = tuples("mail", setting),
     calendar = tuples("calendar", setting)
       .map(
