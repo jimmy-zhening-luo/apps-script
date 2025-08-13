@@ -30,13 +30,13 @@ function loadSetting() {
             .filter(term => term !== ""),
         ] as const,
       );
-  
+
     if (
       mail.length < SETTING.mail.length
       || calendar.length < SETTING.calendar.length
     )
       throw new ReferenceError("Missing settings");
-  
+
     return {
       mail: Object.fromEntries(mail) as Record<typeof mail[number][0], string>,
       calendar: Object.fromEntries(calendar) as Record<typeof calendar[number][0], string[]>,

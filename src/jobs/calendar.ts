@@ -36,7 +36,7 @@ function setEventColor(
       JSON.stringify(_log)
     }`,
   );
-  console.log("setEventColor: Begin setting event color")
+  console.log("setEventColor: Begin setting event color");
   setColor(buffers, "Graphite");
   setColor(sessions, "Peacock");
   setColor(checkups, "Banana");
