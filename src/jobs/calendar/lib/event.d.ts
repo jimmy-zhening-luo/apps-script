@@ -5,5 +5,5 @@ declare interface CalendarEventDetail {
 
 declare type CalendarEventHandle = readonly [
   string,
-  CalendarEventInfo,
+  CalendarEventDetail,
 ];
