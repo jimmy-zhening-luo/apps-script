@@ -19,7 +19,7 @@ function matchEvent(
   return [
     ...new Map<string, GoogleAppsScript.Calendar.CalendarEvent>(
       terms
-        .toLocaleLowerCase()
+        .map(term => term.toLocaleLowerCase())
         .map(
           term => events.filter(
             event => event
