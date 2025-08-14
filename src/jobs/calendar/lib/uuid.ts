@@ -1,5 +1,5 @@
 function uuid(event: GoogleAppsScript.Calendar.CalendarEvent) {
-  function timestring(date: GoogleAppsScript.Base.Date) {
+  function time(date: GoogleAppsScript.Base.Date) {
     return String(date.valueOf());
   }
 
@@ -8,9 +8,9 @@ function uuid(event: GoogleAppsScript.Calendar.CalendarEvent) {
     ...event.isAllDayEvent()
       ? [
           "ALL_DAY",
-          timestring(event.getAllDayStartDate()),
+          time(event.getAllDayStartDate()),
         ]
-      : [timestring(event.getStartTime())],
+      : [time(event.getStartTime())],
   ]
     .join("#");
 }
