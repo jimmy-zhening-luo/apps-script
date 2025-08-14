@@ -12,11 +12,13 @@ function setEventColor(
     `setEventColor: Found event categories: ${printConfig("Buffer", eventBuffer)}; ${printConfig("Therapy", eventTherapy)}; ${printConfig("Doctor", eventDoctor)}; ${printConfig("Haircut", eventHaircut)}`,
   );
 
-  const calendar = CalendarApp.getDefaultCalendar(),
-  buffers = getUpcoming(calendar, eventBuffer),
-  sessions = getUpcoming(calendar, eventTherapy),
-  checkups = getUpcoming(calendar, eventDoctor),
-  haircuts = getUpcoming(calendar, eventHaircut),
+  const events = getUpcomingEvent(
+    CalendarApp.getDefaultCalendar(),
+  ),
+  buffers = matchEvent(events, eventBuffer),
+  sessions = matchEvent(events, eventTherapy),
+  checkups = matchEvent(events, eventDoctor),
+  haircuts = matchEvent(events, eventHaircut),
   _log = {
     buffer: buffers.length,
     therapy: sessions.length,

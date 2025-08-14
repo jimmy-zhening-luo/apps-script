@@ -1,30 +1,32 @@
-function getUpcoming(
+function getUpcomingEvent(
   calendar: GoogleAppsScript.Calendar.Calendar,
-  keywords: string[],
-  lookForward = 7,
+  lookahead = 7,
 ) {
-  const now = new Date,
-  window = {
-    start: now,
-    end: new Date(
+  return calendar.getEvents(
+    new Date,
+    new Date(
       new Date().setMonth(
-        now.getMonth() + lookForward,
+        new Date().getMonth() + lookahead,
       ),
     ),
-  };
+  );
+}
 
+function matchEvent(
+  events: GoogleAppsScript.Calendar.CalendarEvent[],
+  terms: string[],
+) {
   return [
     ...new Map<string, GoogleAppsScript.Calendar.CalendarEvent>(
-      keywords
+      terms
+        .toLocaleLowerCase()
         .map(
-          keyword => calendar
-            .getEvents(
-              window.start,
-              window.end,
-              {
-                search: keyword,
-              },
-            ),
+          term => events.filter(
+            event => event
+              .getTitle()
+              .toLocaleLowerCase()
+              .includes(term),
+          ),
         )
         .flat()
         .map(event => [uuid(event), event]),
