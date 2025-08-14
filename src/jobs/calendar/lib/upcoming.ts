@@ -19,7 +19,7 @@ function getUpcomingEvent(
           title: event
             .getTitle()
             .toLocaleLowerCase(),
-          
+
         },
       ] as const,
     );
