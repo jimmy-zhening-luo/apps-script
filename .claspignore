@@ -1,6 +1,4 @@
 **/**
-
-!appsscript.json
 !**/*.ts
-
 **/*.spec.ts
+!appsscript.json
