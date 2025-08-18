@@ -1,13 +1,16 @@
 function main() {
-  const setting = loadSetting();
+  const {
+    mail,
+    calendar,
+  } = loadSetting();
 
   console.log("main: Start Jobs");
-  cleanGarbage(setting.mail.labelGmailGarbage);
+  cleanGarbage(mail.labelGmailGarbage);
   setEventColor(
-    setting.calendar.eventBuffer,
-    setting.calendar.eventTherapy,
-    setting.calendar.eventDoctor,
-    setting.calendar.eventHaircut,
+    calendar.eventBuffer,
+    calendar.eventTherapy,
+    calendar.eventDoctor,
+    calendar.eventHaircut,
   );
   console.log("main: Jobs Complete");
 }
