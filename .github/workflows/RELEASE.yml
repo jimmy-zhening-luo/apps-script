@@ -14,9 +14,6 @@ jobs:
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4
-        with:
-          submodules: true
-          lfs: false
       - name: Install Node
         id: node
         uses: actions/setup-node@v4
@@ -28,7 +25,7 @@ jobs:
         id: secrets
         run: |
           rm -f ~/.clasprc.json
-          echo '${{ secrets.CLASPRC }}' >> ~/.clasprc.json
+          echo '${{secrets.CLASPRC}}' >> ~/.clasprc.json
       - name: Publish to Google Apps Script
         id: publish
         run: npm run deploy
