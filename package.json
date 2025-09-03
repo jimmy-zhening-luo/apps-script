@@ -23,7 +23,7 @@
   "devDependencies": {
     "@google/clasp": "^2.5.0",
     "@types/google-apps-script": "^2.0.1",
-    "linted": "~30.19.2",
+    "linted": "~30.19.3",
     "typescript": "^5.9.2"
   },
   "scripts": {
