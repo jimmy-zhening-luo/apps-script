@@ -51,7 +51,7 @@
     // "preserveConstEnums": true,
     "removeComments": true,
     "sourceMap": true,
-    "allowJs": true /* @OVERRIDE */,
+    // "allowJs": true,
     // "checkJs": true,
     "allowSyntheticDefaultImports": true,
     // "erasableSyntaxOnly": true,

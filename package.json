@@ -27,7 +27,7 @@
     "@babel/preset-typescript": "^7.27.1",
     "@google/clasp": "3.0.6-alpha",
     "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-node-resolve": "^15.3.1",
+    "@rollup/plugin-node-resolve": "^16.0.1",
     "@types/google-apps-script": "^2.0.1",
     "linted": "~31.0.0",
     "rollup": "^4.50.0",
