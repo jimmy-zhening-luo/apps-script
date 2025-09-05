@@ -1,4 +1,4 @@
-function matchEvent(
+export function matchEvent(
   events: CalendarEventHandle[],
   terms: string[],
 ) {

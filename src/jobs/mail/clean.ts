@@ -1,4 +1,6 @@
-function cleanGarbage(garbageTag: string) {
+import { getThreads } from "./lib/thread";
+
+export function cleanGarbage(garbageTag: string) {
   const garbage = getThreads(garbageTag);
 
   console.log(`cleanGarbage: Retrieved ${garbage.length} threads tagged with: ${garbageTag}`);

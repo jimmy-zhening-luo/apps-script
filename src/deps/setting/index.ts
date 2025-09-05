@@ -1,4 +1,6 @@
-function loadSetting() {
+import { SETTING } from "./setting";
+
+export function loadSetting() {
   function tuples<
     App extends keyof typeof SETTING,
   >(

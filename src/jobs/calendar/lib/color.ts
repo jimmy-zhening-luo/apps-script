@@ -1,4 +1,6 @@
-function setColor(
+import { EVENT_COLORS } from "./colors";
+
+export function setColor(
   events: GoogleAppsScript.Calendar.CalendarEvent[],
   color: keyof typeof EVENT_COLORS,
 ) {

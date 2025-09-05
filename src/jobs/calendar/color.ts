@@ -1,4 +1,10 @@
-function setEventColor(
+import {
+  getUpcomingEvent,
+  matchEvent,
+  setColor,
+} from "./lib";
+
+export function setEventColor(
   eventBuffer: string[],
   eventTherapy: string[],
   eventDoctor: string[],

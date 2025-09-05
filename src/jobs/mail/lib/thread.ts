@@ -1,4 +1,4 @@
-function getThreads(label = "") {
+export function getThreads(label = "") {
   try {
     if (label === "")
       throw new ReferenceError(

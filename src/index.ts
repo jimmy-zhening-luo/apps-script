@@ -1,3 +1,7 @@
+import { loadSetting } from "./deps/setting";
+import { cleanGarbage } from "./jobs/mail/clean";
+import { setEventColor } from "./jobs/calendar/color";
+
 function main() {
   const {
     mail,
@@ -14,3 +18,5 @@ function main() {
   );
   console.log("main: Jobs Complete");
 }
+
+main();

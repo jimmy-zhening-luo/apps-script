@@ -1,12 +1,4 @@
 {
   "$schema": "https://json.schemastore.org/clasp.json",
-  "scriptId": "1qFMqBXZquMU9CrUnqjp-TRRtAxtDn24zFiqKID3f7pNzKGD23m38bbze",
-  "rootDir": "src",
-  "fileExtension": "ts",
-  "filePushOrder": [
-    "src/index.ts",
-    "src/deps/const/index.ts",
-    "src/deps/setting/setting.ts",
-    "src/deps/setting/index.ts"
-  ]
+  "scriptId": "1qFMqBXZquMU9CrUnqjp-TRRtAxtDn24zFiqKID3f7pNzKGD23m38bbze"
 }

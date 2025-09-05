@@ -1,4 +1,4 @@
-const EVENT_COLORS = {
+export const EVENT_COLORS = {
   Lavender: "PALE_BLUE" /* 1 -- BUG: Google documentation incorrectly maps this to "Peacock": https://developers.google.com/apps-script/reference/calendar/event-color */,
   Sage: "PALE_GREEN" /* 2 */,
   Grape: "MAUVE" /* 3 */,
