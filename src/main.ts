@@ -2,6 +2,7 @@ import { loadSetting } from "./deps/setting";
 import { cleanGarbage } from "./tasks/mail/clean";
 import { setEventColor } from "./tasks/calendar/color";
 
+/* eslint @typescript-eslint/no-unused-vars: 0 */
 function main() {
   const {
     mail,
