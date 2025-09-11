@@ -1,14 +1,14 @@
 import { loadSetting } from "./deps/setting";
-import { cleanGarbage } from "./jobs/mail/clean";
-import { setEventColor } from "./jobs/calendar/color";
+import { cleanGarbage } from "./tasks/mail/clean";
+import { setEventColor } from "./tasks/calendar/color";
 
-function main() {
+function tasks() {
   const {
     mail,
     calendar,
   } = loadSetting();
 
-  console.log("main: Start Jobs");
+  console.log("Tasks: Start");
   cleanGarbage(mail.labelGmailGarbage);
   setEventColor(
     calendar.eventBuffer,
@@ -16,7 +16,7 @@ function main() {
     calendar.eventDoctor,
     calendar.eventHaircut,
   );
-  console.log("main: Jobs Complete");
+  console.log("Tasks: Complete");
 }
 
 main();
