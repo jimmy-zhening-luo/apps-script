@@ -1,5 +1,5 @@
 "use strict";
 
-function run() {
+void function run() {
   main();
 }
