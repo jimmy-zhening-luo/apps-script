@@ -1,3 +1,4 @@
 **/**
-!build/**/*.js
-!appsscript.json
+!/appsscript.json
+!/index.js
+!/build/**/*.js
