@@ -19,4 +19,4 @@ function tasks() {
   console.log("Tasks: Complete");
 }
 
-main();
+tasks();
