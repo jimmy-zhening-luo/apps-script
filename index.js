@@ -2,4 +2,4 @@
 
 void function run() {
   main();
-}
+};
