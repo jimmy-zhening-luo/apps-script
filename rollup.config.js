@@ -2,20 +2,17 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { babel } from "@rollup/plugin-babel";
 
 const extensions = [".ts"],
-preventTreeShakingPlugin = () => (
-  {
-    name: "no-treeshaking",
-    resolveId(id, importer) {
-      if (!importer)
-        return {
+noShake = () => ({
+  name: "no-treeshake",
+  resolveId(id, importer) {
+    return !importer
+      ? {
           id,
           moduleSideEffects: "no-treeshake",
-        };
-
-      return null;
-    },
-  }
-);
+        }
+      : null;
+  },
+});
 
 export default {
   input: "./src/main.ts",
@@ -24,18 +21,17 @@ export default {
     format: "cjs",
   },
   plugins: [
-    preventTreeShakingPlugin(),
-    nodeResolve(
-      {
-        extensions,
-        mainFields: ["jsnext:main", "main"],
-      },
-    ),
-    babel(
-      {
-        extensions,
-        babelHelpers: "runtime",
-      },
-    ),
+    noShake(),
+    nodeResolve({
+      extensions,
+      mainFields: [
+        "jsnext:main",
+        "main",
+      ],
+    }),
+    babel({
+      extensions,
+      babelHelpers: "runtime",
+    }),
   ],
 };
