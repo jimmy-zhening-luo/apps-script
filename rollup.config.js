@@ -25,7 +25,7 @@ export default {
     nodeResolve({ extensions }),
     babel({
       extensions,
-      // babelHelpers: "runtime",
+      babelHelpers: "runtime",
     }),
   ],
 };
