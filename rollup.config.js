@@ -6,7 +6,7 @@ const extensions = [".ts"];
 export default {
   input: "./src/main.ts",
   output: {
-    dir: "build",
+    file: "./build/main.ts",
     format: "cjs",
   },
   plugins: [
