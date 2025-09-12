@@ -22,13 +22,7 @@ export default {
   },
   plugins: [
     noShake(),
-    nodeResolve({
-      extensions,
-      mainFields: [
-        "jsnext:main",
-        "main",
-      ],
-    }),
+    nodeResolve({ extensions }),
     babel({
       extensions,
       babelHelpers: "runtime",
