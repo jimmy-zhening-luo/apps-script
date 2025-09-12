@@ -2,17 +2,7 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { babel } from "@rollup/plugin-babel";
 
 const extensions = [".ts"],
-noShake = () => ({
-  name: "no-treeshake",
-  resolveId(id, importer) {
-    return !importer
-      ? {
-          id,
-          moduleSideEffects: "no-treeshake",
-        }
-      : null;
-  },
-});
+noShake = ;
 
 export default {
   input: "./src/main.ts",
@@ -21,7 +11,17 @@ export default {
     format: "cjs",
   },
   plugins: [
-    noShake(),
+    () => ({
+      name: "no-treeshake",
+      resolveId(id, importer) {
+        return !importer
+          ? {
+              id,
+              moduleSideEffects: "no-treeshake",
+            }
+          : null;
+      },
+    }),
     nodeResolve({ extensions }),
     babel({
       extensions,
