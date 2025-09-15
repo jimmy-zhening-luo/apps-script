@@ -15,9 +15,9 @@ noShake = () => ({
 });
 
 export default {
-  input: "./src/main.ts",
+  input: "./src/index.ts",
   output: {
-    file: "./build/main.js",
+    file: "./build/index.js",
     format: "cjs",
   },
   plugins: [

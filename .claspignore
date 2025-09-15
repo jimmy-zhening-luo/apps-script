@@ -1,4 +1,4 @@
 **/**
 !appsscript.json
-!index.js
-!build/main.js
+!main.js
+!build/index.js

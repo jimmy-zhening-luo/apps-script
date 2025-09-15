@@ -2,7 +2,7 @@ import { loadSetting } from "./deps/setting";
 import { cleanGarbage } from "./tasks/mail/clean";
 import { setEventColor } from "./tasks/calendar/color";
 
-function main() {
+function tasks() {
   const {
     mail,
     calendar,
