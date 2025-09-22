@@ -3,16 +3,17 @@ export function uuid(event: GoogleAppsScript.Calendar.CalendarEvent) {
     return String(date.valueOf());
   }
 
-  return [
-    event.getId(),
-    ...event.isAllDayEvent()
-      ? [
-          "ALL_DAY",
-          time(event.getAllDayStartDate()),
-        ]
-      : [time(event.getStartTime())],
-  ]
-    .join("#");
+  return event
+    .getId()
+    .concat(
+      "#",
+      ...event.isAllDayEvent()
+        ? [
+            "ALL_DAY#",
+            time(event.getAllDayStartDate()),
+          ]
+        : [time(event.getStartTime())],
+    );
 }
 export function getUpcomingEvent(
   calendar: GoogleAppsScript.Calendar.Calendar,

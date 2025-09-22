@@ -3,7 +3,7 @@ import { getThreads } from "./lib/thread";
 export function cleanGarbage(garbageTag: string) {
   const garbage = getThreads(garbageTag);
 
-  console.log(`cleanGarbage: Retrieved ${garbage.length} threads tagged with: ${garbageTag}`);
+  console.log(`cleanGarbage: Found ${garbage.length} threads tagged with: ${garbageTag}`);
 
   for (const piece of garbage)
     piece.moveToSpam();

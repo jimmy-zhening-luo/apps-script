@@ -12,7 +12,8 @@ export function getThreads(label = "") {
   }
   catch (e) {
     throw new Error(
-      `Failed to get email threads for label: ${label}`,
+      "Failed to get email threads for label: "
+        .concat(label),
       { cause: e },
     );
   }
