@@ -28,9 +28,9 @@
     "@google/clasp": "3.0.6-alpha",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^16.0.1",
-    "@types/google-apps-script": "^2.0.3",
-    "linted": "~31.2.3",
-    "rollup": "^4.52.0",
+    "@types/google-apps-script": "^2.0.4",
+    "linted": "~31.2.5",
+    "rollup": "^4.52.2",
     "typescript": "^5.9.2"
   },
   "scripts": {
