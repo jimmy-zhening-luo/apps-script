@@ -29,8 +29,8 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@types/google-apps-script": "^2.0.4",
-    "linted": "~31.2.7",
-    "rollup": "^4.52.2",
+    "linted": "~31.2.8",
+    "rollup": "^4.52.3",
     "typescript": "^5.9.2"
   },
   "scripts": {
