@@ -4,7 +4,7 @@
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
   "name": "apps-script",
   "version": "4.0.8",
-  "repository": "github:jimmy-zhening-luo/apps-script",
+  "repository": "github:jimmy-zhening-luo/gsuite",
   "description": "Google Apps Script scripts for Google Apps.",
   "keywords": [
     "apps",
