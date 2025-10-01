@@ -2,7 +2,7 @@
   "$pkg": "2211.5.1",
   "$schema": "https://json.schemastore.org/package",
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
-  "name": "apps-script",
+  "name": "gsuite",
   "version": "4.0.8",
   "repository": "github:jimmy-zhening-luo/gsuite",
   "description": "Google Apps Script scripts for Google Apps.",
@@ -33,9 +33,9 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@types/google-apps-script": "^2.0.4",
-    "linted": "~31.2.10",
+    "linted": "~31.2.11",
     "rollup": "^4.52.3",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "scripts": {
     "clean": "cmd --% /c \"(if exist dist rmdir /s /q dist) & (if exist build rmdir /s /q build) & (if exist .svelte-kit rmdir /s /q .svelte-kit) & (if exist .eslintcache del /f /q .eslintcache)\" || rm -rf dist build .svelte-kit .eslintcache",
