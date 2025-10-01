@@ -7,10 +7,14 @@
   "repository": "github:jimmy-zhening-luo/apps-script",
   "description": "Google Apps Script scripts for Google Apps.",
   "keywords": [
-    "google",
     "apps",
-    "script",
-    "google-apps-script"
+    "calendar",
+    "gmail",
+    "google",
+    "google-apps-script",
+    "google-calendar",
+    "gsuite",
+    "script"
   ],
   "license": "MIT",
   "private": true,
